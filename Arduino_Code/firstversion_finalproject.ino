@@ -1,8 +1,4 @@
-/*
-  Make sure your Firebase project's '.read' and '.write' rules are set to 'true'. 
-  Ignoring this will prevent the MCU from communicating with the database. 
-  For more details- https://github.com/Rupakpoddar/ESP32Firebase 
-*/
+
 
 #include <ArduinoJson.h>            // https://github.com/bblanchon/ArduinoJson 
 #include <ESP32Firebase.h>
@@ -56,16 +52,11 @@ void setup() {
 //================================================================//
 //================================================================//
 
-  // Write some data to the realtime database.
-  //firebase.setString("Example/setString", "It's Working");
-  //firebase.setInt("Example/setInt", 7);
-  //firebase.setFloat("Example/setFloat", 45.32);
 
-  firebase.json(true);              // Make sure to add this line.
+  firebase.json(true);             
   
   
-  // Delete data from the realtime database.
-  //firebase.deleteData("Example");
+  
 }
 
 void loop() {
@@ -79,14 +70,13 @@ void loop() {
   deserializeJson(doc, data);
 
   // Store the deserialized data.
-  //const char* received_String = doc["image"]; // "It's Working"
+  
   int received_int1 = doc["image"];    
   int received_int2 = doc["level"];              // 123
   //float received_float = doc["setFloat"];         // 45.32
 
   // Print data
-  //Serial.print("Received String:\t");
- // Serial.println(received_String);
+  
 
   Serial.print("Received Int1:\t\t");
   Serial.println(received_int1);
@@ -95,8 +85,7 @@ void loop() {
   Serial.println(received_int2);
 
 
-  //Serial.print("Received Float:\t\t");
-  //Serial.println(received_float);
+  
 
   if (received_int2 >= 1) {
     digitalWrite(INIT_PIN, HIGH);
@@ -107,8 +96,7 @@ void loop() {
     digitalWrite(MED_PIN, HIGH);
     Serial.println("medPin is running");
     
-    //digitalWrite(INIT_PIN, HIGH);
-   // Serial.println("initpin is running");
+    
   }
 
   if (received_int2 >= 3) {
@@ -135,5 +123,5 @@ void loop() {
     Serial.println("Motor stopped");
   }
 
-  delay(100);  // Adjust the delay as needed
+  delay(100);  // Adjust the delay as neededs
 }
