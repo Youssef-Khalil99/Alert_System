@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "98143582214",
+    "firebase_url": "https://camera-app-5f678-default-rtdb.firebaseio.com",
+    "project_id": "camera-app-5f678",
+    "storage_bucket": "camera-app-5f678.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98143582214:android:e38ce3df40e82d7acd2b87",
+        "android_client_info": {
+          "package_name": "com.example.alert_system"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqsnaXBOZ52OVSaE0LHrY1jhStxaVTTBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98143582214:android:91cad95f81f568d5cd2b87",
+        "android_client_info": {
+          "package_name": "com.example.camera_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqsnaXBOZ52OVSaE0LHrY1jhStxaVTTBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98143582214:android:88ccbad6a80ff80bcd2b87",
+        "android_client_info": {
+          "package_name": "com.example.camera_app_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqsnaXBOZ52OVSaE0LHrY1jhStxaVTTBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
